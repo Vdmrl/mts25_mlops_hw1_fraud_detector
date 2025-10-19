@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  scorer:
+    build: .
+    container_name: scorer_container
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+      - ./train_data:/app/train_data
